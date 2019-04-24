@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Employee Details</h1>
+
+<h3>First Name:</h3>
+<p th:text="${employee.firstName}">Employee first name</p>
+
+<h3>Last Name:</h3>
+<p th:text="${employee.lastName}">Employee last name</p>
+
+<h3>Gender:</h3>
+<p th:text="${employee.gender}">Employee gender</p>
+
+
+
+
+
+<h1 th:text="'Employee: ' + ${employee.firstName} + ', ' + ${employee.lastName}">Hello</h1>
+
+</body>
+</html>
